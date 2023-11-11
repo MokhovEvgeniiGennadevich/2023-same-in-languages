@@ -9,6 +9,11 @@ export default function Home() {
   const [password, setPassword] = useState(
     "secret password"
   );
+  const [result, setResult] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
 
   // Form: Submit handler
 
@@ -17,11 +22,21 @@ export default function Home() {
     event.preventDefault();
 
     console.log(name, email, password);
+
+    setResult({
+      name,
+      email,
+      password,
+    });
   };
 
   return (
     <main>
       <h1>Simple form in Next JS 14</h1>
+
+      {result.name && result.email && result.password && (
+        <p>Result: {JSON.stringify(result)}</p>
+      )}
 
       <form onSubmit={submit}>
         <label>
