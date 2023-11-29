@@ -1,5 +1,7 @@
 # Same in Programming Languages
 
+[Русский](README.md)
+
 Programming Language Types:
 Dynamic
 Static
@@ -15,7 +17,7 @@ Rust
 GoLang
 
 
-[Русский](README.RU.md)
+
 
 ## Forms
 
